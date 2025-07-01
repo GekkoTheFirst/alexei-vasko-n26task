@@ -28,13 +28,18 @@ Before you begin, ensure you have the following installed:
 
 ### Running Tests
 #### Standard Execution with Playwright
-To run all API tests, use the following command: ```npx playwright test```
+To run all API tests, use the following command: 
+```
+npx playwright test
+```
 
 You can also run specific tests or configure Playwright as needed (check [Playwright documentation](https://playwright.dev/docs/running-tests#running-tests)).
 
 #### Running Tests with Docker
 For a consistent and isolated test environment, you can run the tests using Docker. This command will build the Docker image, execute the tests, and output the test reports to a reports directory on your host machine.
-```docker build --output=./reports --target=artifacts .```
+```
+docker build --output=./reports --target=artifacts .
+```
 
 where 
 * *--output=./reports* specifies that the build output that includes the test reports should be copied to the reports directory in your current working directory on the host machine.
