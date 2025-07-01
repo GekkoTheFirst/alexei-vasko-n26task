@@ -36,7 +36,10 @@ npx playwright test
 You can also run specific tests or configure Playwright as needed (check [Playwright documentation](https://playwright.dev/docs/running-tests#running-tests)).
 
 #### Running Tests with Docker
-For a consistent and isolated test environment, you can run the tests using Docker. This command will build the Docker image, execute the tests, and output the test reports to a reports directory on your host machine.
+There are two approaches for this: a long-running service or one-time execution.
+To get things working quickly and efficiently, I selected a one-time execution, as it's a straightforward solution. If company's policy requires using only proprietary images, a multi-stage build will need to be implemented in the future.
+
+For a consistent and isolated test environment, you can run the tests using Docker. This command will build the Docker image, execute the tests, and output the test reports to a reports directory on your host machine:
 ```
 docker build --output=./reports --target=artifacts .
 ```
@@ -47,7 +50,7 @@ where
 * *.* refers to the current directory as the build context.
 
 ### Reporting
-After a test run (either standard or Dockerized), the latest test report will be available in *reports* directory at the root of the project. This report provides a detailed overview of the test execution results. To view the Playwright HTML report, navigate to the reports directory and open the index.html file in your web browser.
+After a test run (either standard or Dockerized), the latest test report will be available in the **reports** directory at the root of this task. This report provides a detailed overview of the test execution results. To view the Playwright HTML report, navigate to the **reports** directory and open the index.html file in your web browser.
 
 ### Approach and Tech Stack Choices
 This project utilizes Playwright for API testing, following POM design pattern. Next I will list some points why this approach and tech stack were chosen:
