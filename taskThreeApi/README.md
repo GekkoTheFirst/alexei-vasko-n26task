@@ -1,4 +1,4 @@
-# Task 3 - RESTful API Test Automation
+# Task 3 - RESTful API test automation
 
 This repository contains an automated API testing suite built with Playwright, designed to ensure the reliability and correctness of API endpoints. The project adheres to Page Object Model (POM) design pattern, enhancing test maintainability and readability.
 
@@ -26,8 +26,8 @@ Before you begin, ensure you have the following installed:
     npm install
     ```
 
-### Running Tests
-#### Standard Execution with Playwright
+### Running tests
+#### Standard execution with Playwright
 To run all API tests, use the following command: 
 ```
 npx playwright test
@@ -35,7 +35,7 @@ npx playwright test
 
 You can also run specific tests or configure Playwright as needed (check [Playwright documentation](https://playwright.dev/docs/running-tests#running-tests)).
 
-#### Running Tests with Docker
+#### Running tests with Docker
 There are two approaches for this: a long-running service or one-time execution.
 To get things working quickly and efficiently, I selected a one-time execution, as it's a straightforward solution. If company's policy requires using only proprietary images, a multi-stage build will need to be implemented in the future.
 
@@ -52,7 +52,7 @@ where
 ### Reporting
 After a test run (either standard or Dockerized), the latest test report will be available in the **reports** directory at the root of this task. This report provides a detailed overview of the test execution results. To view the Playwright HTML report, navigate to the **reports** directory and open the index.html file in your web browser.
 
-### Approach and Tech Stack Choices
+### Approach and tech stack choices
 This project utilizes Playwright for API testing, following POM design pattern. Next I will list some points why this approach and tech stack were chosen:
 
 * Playwright is commonly known for browser automation, however Playwright offers robust capabilities for making HTTP requests and handling responses, making it an excellent choice for API testing. Its built-in assertions, test runners, and reporting features streamline the testing process. It provides a unified API for different browsers and environments.
