@@ -6,6 +6,8 @@
 ## 1. Summary
 This report summarizes the findings from a 90 minutes freestyle exploratory testing session on Monefy app for Android. The report focused on evaluating areas including user onboarding, core transaction, premium feature gateways, and categories.
 
+I would like to note that 
+
 ## 2. Charters
 ### ONBOARDING:
 
@@ -55,7 +57,6 @@ This report summarizes the findings from a 90 minutes freestyle exploratory test
     * Outside Scope: User onboarding flow; Push notifications; Core functionality of expenses and incomes; Transactions between accounts; Premium features.
 
 #### Logs
-
 | Step | Action | Expected Result | Actual | Result | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | After onboarding, view the main dashboard. | The app should present an "Expense button" tooltip. | The tutorial tooltip is presented. | Pass | |
@@ -122,7 +123,6 @@ This report summarizes the findings from a 90 minutes freestyle exploratory test
     * Outside Scope: Core workflow of editing and deleting accounts.
 
 #### Logs
-
 | Step | Action | Expected Result | Actual | Result | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Navigate to Menu > Accounts. | A list of accounts should be displayed. | The list of accounts appeared. | Pass | |
@@ -156,7 +156,6 @@ This report summarizes the findings from a 90 minutes freestyle exploratory test
     * Outside Scope: The purchase flow; All non-premium features.
 
 #### Logs
-
 | Step | Action | Expected Result | Actual | Result | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | In Settings, navigate to "Categories." | The user should be able to view existing categories. | The category list was displayed. | Pass | |
@@ -199,10 +198,39 @@ This report summarizes the findings from a 90 minutes freestyle exploratory test
 
 ### FUNCTIONALITY
 
-#### **7-Charter: Adding expense after removing available categories and disable the last one**
+#### **7-Charter: Opening right overflow settings menu**
 * Author: A.V.
 * Date: June 30, 2025
 * Priority: Medium - Categories functionality
+* Test Environment:
+    * App Version: 1.22.2.2218
+    * Device: OnePlus (Android phone)
+    * OS: Android version 15
+* Objectives: Evaluating the possibility of opening setting menu
+* Scope:
+    * In Scope: Core workflow of opening menu
+    * Outside Scope: Evaluating available menu options.
+
+#### Logs
+| Step | Action | Expected Result | Actual | Result | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | On the main dashboard, locate the overflow menu icon. | A standard three-dot icon should be clearly visible in the top-right corner. | The icon is present and clearly visible. | Pass | UI note as menu is usually located on the left side of the app. |
+| 2 | Tap the overflow menu icon. | A dropdown or side menu should open smoothly, displaying a list of options. | The menu opened instantly. | Pass | |
+| 3 | Verify the content of the menu. | The menu should contain key options like "Categories", "Accounts", and "Settings". | All expected primary options were present and clearly labeled. | Pass | |
+| 4 | With the menu open, tap on the back arrow (<-). | The menu should close, and the user should be returned to the dashboard. | The menu closed doesn't close and left side menu is opened. | Fail | This defect should be logged in the issue tracking system. |
+| 5 | Re-open the menu by tapping the icon again. | The menu should open again. | The menu opened correctly. | Pass | |
+| 6 | With the menu open, tap on the three-dot icon. |  The menu should close, and the user should remain on the dashboard. | The menu closed correctly. | |
+
+#### Potential Defects
+* Issue: Tapping the back arrow (<-) within the right-side overflow menu results in unexpected behavior. Instead of closing the current menu and returning to the dashboard, it incorrectly opens a different, left-side menu, breaking the standard navigation flow and creating a confusing user experience.
+
+#### Recommendations & Next Steps
+* The development team should correct the back arrow's functionality within the right overflow menu. It should be programmed to close the menu and return the user to the dashboard screen
+
+#### **8-Charter: Adding expense after removing available categories and disable the last one**
+* Author: A.V.
+* Date: June 30, 2025
+* Priority: Low - Categories functionality
 * Test Environment:
     * App Version: 1.22.2.2218
     * Device: OnePlus (Android phone)
@@ -213,7 +241,6 @@ This report summarizes the findings from a 90 minutes freestyle exploratory test
     * Outside Scope: Evaluating Premium gateway.
 
 #### Logs
-
 | Step | Action | Expected Result | Actual | Result | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Navigate to Menu > Categories. | The list of categories should be displayed. | The list appeared. | Pass | |
