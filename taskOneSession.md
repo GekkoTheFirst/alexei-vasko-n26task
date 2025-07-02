@@ -9,6 +9,8 @@ This report summarizes the findings from a 90 minutes freestyle exploratory test
 I would like to note that 
 
 ## 2. Charters
+I'd like to note that a few repeatable charters haven't been included in the report.
+
 ### ONBOARDING:
 
 #### **1-Charter: The user onboarding experience with allowing push notifications**
