@@ -14,13 +14,7 @@ Before you begin, ensure you have the following installed:
 * [Docker](https://www.docker.com/get-started) (if you plan to run tests via Docker)
 
 ### Installation
-1. Clone the repository:
-    ```
-    git clone <repository_url>
-    cd <repository_name>
-    ```
-    replace `<repository_url>` and `<repository_name>` with the real repository details.
-
+1. Clone the repository.
 2. Install dependencies:
     ```
     npm install
