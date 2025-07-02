@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"55521dafac140b53b629f94a7a36e0aa","name":"E2E - dashboard","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}},{"uid":"a2d9328540f10f89fbc016498a32fefc","name":"E2E - Monify onboarding","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}

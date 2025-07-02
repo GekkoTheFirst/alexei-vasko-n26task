@@ -1,0 +1,27 @@
+{
+	"name": "tasktwomobile",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"prewdio": "npx @biomejs/biome format --write",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"wdio": "wdio run ./wdio.conf.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"description": "",
+	"devDependencies": {
+		"@testing-library/webdriverio": "^3.2.1",
+		"@wdio/allure-reporter": "^9.16.2",
+		"@wdio/cli": "^9.16.2",
+		"@wdio/local-runner": "^9.16.2",
+		"@wdio/mocha-framework": "^9.16.2",
+		"@wdio/spec-reporter": "^9.16.2",
+		"@wdio/visual-service": "^8.0.4",
+		"appium-uiautomator2-driver": "^4.2.4",
+		"wdio-wait-for": "^3.1.0"
+	},
+	"dependencies": {}
+}

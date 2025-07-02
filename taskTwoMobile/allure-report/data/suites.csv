@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7188","should successfully complete onboarding","","Wed Jul 02 18:15:38 CEST 2025","passed","Wed Jul 02 18:15:45 CEST 2025","","E2E - Monify onboarding","",""
+"","17107","adds expenses using a category and the bottom button to verify negative sum, then verify the handling of negative balances","","Wed Jul 02 18:14:57 CEST 2025","passed","Wed Jul 02 18:15:14 CEST 2025","","E2E - dashboard","",""
+"","14700","adds $500 in income and $101 in expense using the bottom button to verify calculations, then verify the final balance","","Wed Jul 02 18:15:14 CEST 2025","passed","Wed Jul 02 18:15:29 CEST 2025","","E2E - dashboard","",""
