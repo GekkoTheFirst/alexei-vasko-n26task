@@ -208,20 +208,20 @@ I'd like to note that a few repeatable charters haven't been included in the rep
     * App Version: 1.22.2.2218
     * Device: OnePlus (Android phone)
     * OS: Android version 15
-* Objectives: Evaluating the possibility of opening setting menu
+* Objectives: Evaluating the possibility of opening settins menu.
 * Scope:
-    * In Scope: Core workflow of opening menu
+    * In Scope: Core workflow of opening menu.
     * Outside Scope: Evaluating available menu options.
 
 #### Logs
 | Step | Action | Expected Result | Actual | Result | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | On the main dashboard, locate the overflow menu icon. | A standard three-dot icon should be clearly visible in the top-right corner. | The icon is present and clearly visible. | Pass | UI note as menu is usually located on the left side of the app. |
-| 2 | Tap the overflow menu icon. | A dropdown or side menu should open smoothly, displaying a list of options. | The menu opened instantly. | Pass | |
-| 3 | Verify the content of the menu. | The menu should contain key options like "Categories", "Accounts", and "Settings". | All expected primary options were present and clearly labeled. | Pass | |
-| 4 | With the menu open, tap on the back arrow (<-). | The menu should close, and the user should be returned to the dashboard. | The menu closed doesn't close and left side menu is opened. | Fail | This defect should be logged in the issue tracking system. |
-| 5 | Re-open the menu by tapping the icon again. | The menu should open again. | The menu opened correctly. | Pass | |
-| 6 | With the menu open, tap on the three-dot icon. |  The menu should close, and the user should remain on the dashboard. | The menu closed correctly. | |
+| 1 | On the main dashboard, locate the overflow menu icon. | A standard three-dot icon should be clearly visible in the top-right corner. | The icon is present and clearly visible. | Pass | UI Note: The menu is typically located on the left side of the app. |
+| 2 | Tap the overflow menu icon. | A dropdown or side menu should open smoothly, displaying a list of options. | The menu opens instantly. | Pass | |
+| 3 | Verify the content of the menu. | The menu should contain key options: "Categories", "Accounts", "Currencies", and "Settings". | All expected options are present and clearly labeled. | Pass | |
+| 4 | With the menu open, tap on the back arrow (<-). | The menu should close, and the user should be returned to the dashboard. | The click opens the left-side menu instead of closing the settings menu. | Fail | This defect should be logged in the issue tracking system. |
+| 5 | Re-open the menu by tapping the icon again. | The menu should open again. | The menu opens correctly. | Pass | |
+| 6 | With the menu open, tap on the three-dot icon. |  The menu should close, and the user should remain on the dashboard. | The menu closes correctly. | |
 
 #### Potential Defects
 * Issue: Tapping the back arrow (<-) within the right-side overflow menu results in unexpected behavior. Instead of closing the current menu and returning to the dashboard, it incorrectly opens a different, left-side menu, breaking the standard navigation flow and creating a confusing user experience.
