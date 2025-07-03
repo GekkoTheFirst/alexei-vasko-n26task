@@ -201,12 +201,12 @@ I'd like to note that a few repeatable charters haven't been included in the rep
 #### **7-Charter: Opening right overflow settings menu**
 * Author: A.V.
 * Date: June 30, 2025
-* Priority: Medium - Categories functionality
+* Priority: Medium - Menu functionality
 * Test Environment:
     * App Version: 1.22.2.2218
     * Device: OnePlus (Android phone)
     * OS: Android version 15
-* Objectives: Evaluating the possibility of opening settins menu.
+* Objectives: Evaluating the possibility of opening Settings menu.
 * Scope:
     * In Scope: Core workflow of opening menu.
     * Outside Scope: Evaluating available menu options.
@@ -226,6 +226,8 @@ I'd like to note that a few repeatable charters haven't been included in the rep
 
 #### Recommendations & Next Steps
 * The development team should correct the back arrow's functionality within the right overflow menu. It should be programmed to close the menu and return the user to the dashboard screen
+
+---
 
 #### **8-Charter: Adding expense after removing available categories and disable the last one**
 * Author: A.V.
@@ -264,6 +266,9 @@ High:
 Medium: 
 * The onboarding flow contains misleading or unclear information, and key features are not easily discoverable. This poses a risk of lower user engagement and feature adoption.
 * Users can get into a state where they are unable to perform a core function (adding an expense) without any guidance on how to resolve it.
+
+Low:
+* The unexpected navigation behavior when using the back arrow presents an usability risk. By violating standard UI patterns, it can lead to user confusion and frustration.
 
 ## 4. Conclusion
 This series of charter-based exploratory tests confirms that the Monefy application has a robust and efficient core functionality for tracking expenses and income. However, a few issues were identified in the surrounding user experience, data handling, and business logic.
