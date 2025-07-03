@@ -219,7 +219,7 @@ I'd like to note that a few repeatable charters haven't been included in the rep
 | 3 | Verify the content of the menu. | The menu should contain key options: "Categories", "Accounts", "Currencies", and "Settings". | All expected options are present and clearly labeled. | Pass | |
 | 4 | With the menu open, tap on the back arrow (<-). | The menu should close, and the user should be returned to the dashboard. | The click opens the left-side menu instead of closing the settings menu. | Fail | This defect should be logged in the issue tracking system. |
 | 5 | Re-open the menu by tapping the icon again. | The menu should open again. | The menu opens correctly. | Pass | |
-| 6 | With the menu open, tap on the three-dot icon. |  The menu should close, and the user should remain on the dashboard. | The menu closes correctly. | |
+| 6 | With the menu open, tap on the three-dot icon. |  The menu should close, and the user should remain on the dashboard. | The menu closes correctly. | Pass | |
 
 #### Potential Defects
 * Issue: Tapping the back arrow (<-) within the right-side overflow menu results in unexpected behavior. Instead of closing the current menu and returning to the dashboard, it incorrectly opens a different, left-side menu, breaking the standard navigation flow and creating a confusing user experience.
