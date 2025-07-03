@@ -33,8 +33,8 @@ appium
 
 #### Running device/emulator
 Before running the tests, you must have either:
-- An **Android Virtual Device (AVD)** running via Android Studio or Android SDK.
-- A **physical Android device** connected to your computer with USB debugging enabled.
+- An **Android Virtual Device (AVD)** running via Android Studio or Android SDK. To set up and run an emulator, please follow this [guidance](https://developer.android.com/studio/run/emulator).
+- A **physical Android device** connected to your computer with USB debugging enabled. o run on a real device, follow [these steps](https://developer.android.com/studio/run/device).
 
 The test suite will automatically detect and use the available device or emulator.
 
