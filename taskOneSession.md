@@ -6,8 +6,6 @@
 ## 1. Summary
 This report summarizes the findings from a 90 minutes freestyle exploratory testing session on Monefy app for Android. The report focused on evaluating areas including user onboarding, core transaction, premium feature gateways, and categories.
 
-I would like to note that 
-
 ## 2. Charters
 I'd like to note that a few repeatable charters haven't been included in the report.
 
